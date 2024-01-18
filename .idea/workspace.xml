@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f7bd6ad-8af7-4993-9ec0-200cb3ae36c1" name="Changes" comment="finitoooo">
+    <list default="true" id="4f7bd6ad-8af7-4993-9ec0-200cb3ae36c1" name="Changes" comment="Versione leggerente migliorata">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aaaaaa.txt" beforeDir="false" afterPath="$PROJECT_DIR$/aaaaaa.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Notes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Notes.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,11 +59,28 @@
       <option name="project" value="LOCAL" />
       <updated>1704648352111</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Versione leggerente migliorata">
+      <option name="closed" value="true" />
+      <created>1705575589246</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1705575589246</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Versione leggerente migliorata">
+      <option name="closed" value="true" />
+      <created>1705575608065</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1705575608065</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="finitoooo" />
-    <option name="LAST_COMMIT_MESSAGE" value="finitoooo" />
+    <MESSAGE value="Versione leggerente migliorata" />
+    <option name="LAST_COMMIT_MESSAGE" value="Versione leggerente migliorata" />
   </component>
 </project>

@@ -100,7 +100,7 @@ class Notes extends JFrame implements ActionListener, DocumentListener {
         addWindowListener(new WindowAdapter() {
             @Override
             public void windowClosing(WindowEvent e) {
-                commandExit();
+                if(checkSaved() == 1) commandExit();
             }
         });
 
@@ -109,11 +109,13 @@ class Notes extends JFrame implements ActionListener, DocumentListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         if(e.getSource() == mniNew) {
-             commandNew();
+            if(checkSaved() == 1)
+                commandNew();
         }
 
         if(e.getSource() == mniOpen) {
-            commandOpen();
+            if(checkSaved() == 1)
+                commandOpen();
         }
 
         if(e.getSource() == mniSave) {
@@ -125,7 +127,8 @@ class Notes extends JFrame implements ActionListener, DocumentListener {
         }
 
         if(e.getSource() == mniAbout) {
-            commandAbout();
+            if(checkSaved() == 1)
+                commandAbout();
         }
     }
 
@@ -194,6 +197,29 @@ class Notes extends JFrame implements ActionListener, DocumentListener {
 
     @Override
     public void changedUpdate(DocumentEvent e) {isSaved = false;}
+
+
+    private int checkSaved(){
+       int rc = JOptionPane.showOptionDialog(this,
+                "Il file non è salvato. Lo vuoi savare?",
+                "FALLITO",
+                JOptionPane.YES_NO_CANCEL_OPTION,
+                JOptionPane.INFORMATION_MESSAGE,
+                null,
+                null,
+                null);
+
+       if(isSaved) return 1;
+       if(rc == JOptionPane.CANCEL_OPTION) return 0; //non fa l'opzione selezionata
+       if(rc == JOptionPane.YES_OPTION){
+            //bisogna salvarlo
+           commandSave();
+            return 1;
+        };
+        if(rc == JOptionPane.NO_OPTION) return 1; // fa comunque l'opzione che segue
+
+        return 1;
+    }
 }
 
 
